@@ -8,6 +8,6 @@ def hello():
 
 @app.route("/new")
 def new():
-    return "NEW WORLD!"
+    return "I am running first cipipeline!"
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
