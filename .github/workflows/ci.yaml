@@ -28,7 +28,7 @@ jobs:
         # Image name: yourimage:2025-12-11-090512
 
       - name: Build and push image
-        run:
+        run: |
          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/flask-hello:${{ env.VERSION }} .
          docker push ${{ secrets.DOCKERHUB_USERNAME }}/flask-hello:${{ env.VERSION }}
        
